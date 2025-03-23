@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Tags Showcase</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header, nav, main, section, article, aside, footer {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 12px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00f2fe;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    section, aside {
+      flex: 1 1 45%;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    article {
+      background: #e0f7fa;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea, button {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #4facfe;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #00c6ff;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100%);}
+      to {transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML Tags & Animation Showcase</h1>
+    <p>Explore the most common HTML elements with smooth animations</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About This Page</h2>
+      <p>This section uses a variety of HTML elements including lists, tables, and images.</p>
+      <ul>
+        <li>Responsive Design</li>
+        <li>Modern Layout</li>
+        <li>HTML5 Tags</li>
+      </ul>
+
+      <h3>Sample Table</h3>
+      <table>
+        <tr><th>Name</th><th>Role</th></tr>
+        <tr><td>Alice</td><td>Developer</td></tr>
+        <tr><td>Bob</td><td>Designer</td></tr>
+      </table>
+    </section>
+
+    <aside>
+      <h2>Quick Info</h2>
+      <p>This is an <strong>aside</strong> element, often used for side notes or extra links.</p>
+      <img src="https://placekitten.com/300/200" alt="Sample Kitten" />
+    </aside>
+
+    <section>
+      <h2>HTML Form</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required/>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <article>
+      <h2>Embedded Media</h2>
+      <video width="100%" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML Showcase | Made with ❤️</p>
+  </footer>
+
+</body>
+</html>
